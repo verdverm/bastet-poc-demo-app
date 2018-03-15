@@ -33,6 +33,7 @@ let getWeb3 = new Promise(function(resolve, reject) {
       // use the development console's port by default.
       // var provider = new Web3.providers.HttpProvider('http://localhost:3000/api')
       var provider = new Web3.providers.HttpProvider('http://localhost:4545')
+      // var provider = new Web3(Web3.providers.WebsocketProvider('ws://localhost:4545'))
 
       web3 = new Web3(provider)
 
